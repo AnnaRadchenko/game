@@ -1,0 +1,193 @@
+*{
+      	margin: 0;
+        padding: 0;
+}
+
+#page-preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 100500;
+}
+
+#page-preloader .spinner {
+        width: 48px;
+        height: 78px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: url("pic/spinner.gif") no-repeat 50% 50%;
+        margin: -16px 0 0 -16px;
+        z-index: 100500;
+}
+
+#page-preloader .rules{
+        width: 900px;
+        height: 550px;
+        position: absolute;
+        right: 200px;
+        top: 10%;
+        background:url("pic/text.png") no-repeat 50% 50%;
+        z-index: 100501;
+        opacity: 0.5;
+}
+
+.wrapper{
+        position:fixed;
+        top:-50%;
+        left:-50%;
+        width:200%;
+        height:200%;
+        z-index: 1;
+}
+
+.wrapper img {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+        min-width:50%;
+        min-height:50%;
+        z-index: 2;       
+}
+
+button{
+        position:absolute;
+        left: 18%;
+        top: 25%;
+        z-index: 1001;
+        height: 25px;
+        width: 25px;
+        padding: 0;
+        border:0;
+        background:none;
+        cursor: pointer;
+        opacity: 0.5;
+}  
+
+button: active,
+button: focus{
+        outline: none;
+        border:0;
+}
+.button_start {
+        left: 45%;
+        top: 90%;
+        height: 50px;  
+        width: 200px;
+        background:none;
+        cursor: pointer;
+        opacity: 0.5;
+        font-size: 30px;
+        transition: background .8s;
+        background-color: #03d7fd;
+        border-radius: 3px;
+        border: 1px solid green;
+        color: white;
+        opacity: 0.5;
+}
+
+.button_start:hover {
+        background-color: #11bedd;
+        transform: scale(1.5);
+}
+
+.gunman_timer{
+        top: 25%;
+}
+
+.mytimer{
+        top: 35%;
+}
+
+.count{
+        top: 45%;
+}
+
+.gunman_timer, .mytimer, .count{
+        font-size: 21px;
+        background-color: #03d7fd;
+        border-radius: 3px;
+        border: 1px solid green ;
+        width: 10%;
+        height: 7%;
+        left: 2em;
+        z-index: 10000;
+        position: absolute;
+        margin: 5px 5px;
+        color: white;
+        opacity: 0.5;
+}
+.message{
+        position:absolute;
+        z-index: 999 ;
+        background-color: #03d7fd;
+        border-radius: 3px;
+        opacity: 0.5;
+        border: 1px solid green;
+        left: 1.5em;
+        top:1%;
+        padding: 3px;
+        font-size: 36px;
+        color: white;
+}
+
+.gun_man_boy{
+      	background-image: url("pic/gunman.png");
+      	position: absolute;
+      	left: 5%;
+      	background-size: 1200px;
+      	margin-top: 200px;
+      	overflow: hidden;
+        z-index: 1000;
+        height: 130px;
+        width: 100px;
+        cursor: pointer;
+}
+
+.gun_man_boy:hover{
+	      transform: scale(1.5);
+}
+
+@keyframes move{
+        0% {background-position: 0 0;}
+        100% {background-position: -300px 0;}
+}
+
+.gun_man_boy_step{
+	      animation-name: move;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(3);
+        animation-fill-mode: forwards;
+}
+
+.gun_man_boy_move{ 
+        left: 650px;
+        transition: left 7s;
+}
+
+@keyframes return{
+        100% {background-position: -1500px 0px;}
+}
+
+.gun_man_boy_return{
+	      animation: return 1s steps(3) 1;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+

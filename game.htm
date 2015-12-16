@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+  <html>
+     <head>
+            <META http-equiv=Content-Type content="text/html; charset=windows-1251">
+            <title>Game</title>
+
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+
+            <link rel="stylesheet" type="text/css" href="game_css.css">
+            <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Arimo:700'>
+            <link rel="stylesheet" href="flipclock.css">
+            <script type="text/javascript" src="flipclock.js"></script>
+
+  </head>
+
+
+  <body style='overflow:hidden;'>
+        
+         
+            <div id="page-preloader">
+                <span class="spinner"></span>
+                <span class="rules"></span>
+            </div>
+
+            <div class = wrapper>
+                <img src="pic/bg.jpeg" alt="">
+            </div>
+
+            <div class="message">Game finished over:</div>
+
+            <div class="clock" style="margin:5em;"></div>
+            
+            <button id="changeStateButton" state='false'><img id="mybtn" src = "pic/2b.png"></button>
+
+    		<button class="button_start">Start</button>
+    	          
+            <div class="gunman_timer">Smurf time:</div>
+            <div class="mytimer">Your time:</div>
+            <div class="count">Count:</div>
+            
+    	    <div class = "gun_man_background">
+    	         <div class = "gun_man_boy"></div>
+         	</div>
+
+            
+            <audio class="audioPlayer" id="myaudio" loop >
+                 <source src="pic/music.mp3" type="audio/mpeg">
+            </audio>
+
+            <script type="text/javascript" src="ask.js"></script>
+
+  </body>
+</html>
+
+
